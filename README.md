@@ -1,2 +1,3 @@
-# labse.camarm.fr
-Official Labse Softwares website
+# Labse Softwares
+We distribute ethic applications on Play Store
+
