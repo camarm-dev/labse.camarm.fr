@@ -25,6 +25,7 @@
     --primary: #dab815;
     --active: #b6a54b;
     --secondary: #592CAB;
+    --secondary-active: #643ea9;
 }
 
 
@@ -41,8 +42,16 @@ body {
     color: var(--primary) !important;
 }
 
+a.has-text-primary:hover {
+    color: var(--active) !important;
+}
+
 .has-text-secondary {
-    color: var(--secondary)
+    color: var(--secondary) !important;
+}
+
+a.has-text-secondary:hover {
+    color: var(--secondary-active) !important;
 }
 
 .title.is-large {
@@ -190,9 +199,22 @@ footer p {
     font-family: "IBMPlex", sans-serif;
 }
 
+.icon img {
+    height: 3em;
+    width: 3em;
+}
+
 @media (max-width: 1024px) {
     .no-mg-mobile {
         margin: 0 !important;
+    }
+
+    .title.is-large {
+        font-size: 3em;
+    }
+
+    .level-item a {
+        font-size: .9em;
     }
 
     .is-justify-content-right:not(.also-mobile) {
