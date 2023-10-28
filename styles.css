@@ -209,6 +209,10 @@ footer p {
         margin: 0 !important;
     }
 
+    .columns.is-multiline {
+        max-width: 100%;
+    }
+
     .title.is-large {
         font-size: 3em;
     }
