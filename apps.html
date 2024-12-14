@@ -6,15 +6,15 @@
   <meta name="description" content="We distribute ethic and open source software thru the Play Store">
   <meta name="author" content="camarm">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
-  <link rel="stylesheet" href="/styles.css" />
-  <link rel="icon" href="/img/icon.png">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="img/icon.png">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
-  <title>Labse Softwares | Software distribution</title>
-  <meta property="og:title" content="Labse Softwares | Our apps" />
+  <title>Labse Studio | Software distribution</title>
+  <meta property="og:title" content="Labse Studio | We distribute software" />
   <meta property="og:url" content="https://labse.camarm.fr" />
-  <meta property="og:image" content="/img/og.png" />
+  <meta property="og:image" content="img/og.png" />
 </head>
-<body>
+<body class="dark">
 <div>
   <nav class="level is-mobile">
     <div class="level-left">
@@ -25,10 +25,11 @@
       </div>
     </div>
     <div class="level-right">
-      <div class="level-item is-justify-content-right also-mobile">
-<!--        <a class="has-text-white has-font-weight-bold">contact@labse.software</a>-->
-        <a class="has-text-white has-font-weight-bold">software@camarm.dev</a>
-      </div>
+      <a href="/apps.html" class="mr-5">Our apps</a>
+      <button class="button is-rounded has-background-secondary mr-2" onclick="window.open('mailto:software@camarm.dev')">Contact us</button>
+      <button class="button is-rounded has-background-secondary" onclick="document.body.classList.toggle('dark'); this.querySelector('i').classList.toggle('fa-sun'); this.querySelector('i').classList.toggle('fa-moon')">
+        <i class="fa fa-sun"></i>
+      </button>
     </div>
   </nav>
   <section class="section">
@@ -111,11 +112,10 @@
     </div>
     <div class="container">
       <div class="is-flex-tablet is-justify-content-between is-align-items-center">
-        <p>All rights reserved © Labse Softwares</p>
+        <p>All rights reserved © Labse Studio</p>
         <div class="py-2 is-hidden-tablet"></div>
         <div class="ml-auto">
           <a class="mr-4 is-inline-block" href="https://play.google.com/dev" target="_blank"><i class="fab fa-google-play"></i> Play Store</a>
-          <a class="mr-4 is-inline-block" href="https://labse.camarm.fr"><i class="fas fa-browser"></i> Website</a>
           <a class="mr-4 is-inline-block" href="mailto:software@camarm.dev"><i class="fas fa-envelope"></i> Email</a>
         </div>
       </div>
