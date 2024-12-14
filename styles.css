@@ -114,30 +114,50 @@ nav {
     background: linear-gradient(90deg, transparent, var(--primary) 5%, var(--primary) 50%, var(--primary) 95%, transparent );
 }
 
-img.floating {
+.floating {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    animation: jump ease-in-out 5s infinite;
+}
+
+.floating img {
     max-width: 100px;
-    rotation-point: center;
 }
 
 .floating:first-child {
+    right: 20%;
+}
+
+.floating:nth-child(2) {
+    left: 15%;
+}
+
+.floating:first-child img {
     position: absolute;
-    right: 50px;
     animation: turn ease-in-out 20s infinite;
 }
 
-.landing .column .floating:nth-child(2) {
+.landing .column .floating:nth-child(2) img {
     position: absolute;
-    left: 50px;
-    animation: turn ease-in-out 5s infinite;
+    animation: turn ease-in-out 20s infinite;
 }
 
 @keyframes turn {
     from {
-        transform: translate(0, 0) rotate(0);
+        transform: rotate(0);
     }
     50% {
-        rotate: 360deg;
-        transform: translate(20%, 60%) rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes jump {
+    from {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, 60%);
     }
 }
 
