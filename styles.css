@@ -267,12 +267,12 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
 }
 
 .box.focus {
     cursor: pointer;
     transition: .5s ease-in-out;
+    text-align: center;
 }
 
 .box.focus .icon, .box.focus img {
