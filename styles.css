@@ -4,18 +4,6 @@
     src: url("font/Sen-VariableFont_wght.ttf");
 }
 
-@font-face {
-    font-family: "IBMPlex";
-    font-weight: normal;
-    src: url("font/IBMPlexSans-Regular.ttf");
-}
-
-@font-face {
-    font-family: "IBMPlex";
-    font-weight: bold;
-    src: url("font/IBMPlexSans-Bold.ttf");
-}
-
 :root {
     --text: #060606;
     --bg: #f3f3f6;
@@ -42,7 +30,7 @@ body {
     color: var(--text) !important;
     background-color: var(--bg) !important;
     min-height: 100vh;
-    font-family: "IBMPlex", sans-serif;
+    font-family: "Sen", sans-serif;
 }
 
 .has-text-white {
@@ -118,7 +106,6 @@ nav {
     position: absolute;
     width: 100px;
     height: 100px;
-    animation: jump ease-in-out 5s infinite;
 }
 
 .floating img {
@@ -127,10 +114,14 @@ nav {
 
 .floating:first-child {
     right: 20%;
+    transform: translate(50%, 0);
+    animation: jumpRight ease-in-out 5s infinite;
 }
 
 .floating:nth-child(2) {
     left: 15%;
+    transform: translate(-100%, 0);
+    animation: jumpLeft ease-in-out 5s infinite;
 }
 
 .floating:first-child img {
@@ -152,12 +143,21 @@ nav {
     }
 }
 
-@keyframes jump {
+@keyframes jumpLeft {
     from {
-        transform: translate(0, 0);
+        transform: translate(-100%, 0);
     }
     50% {
-        transform: translate(0, 60%);
+        transform: translate(-100%, 60%);
+    }
+}
+
+@keyframes jumpRight {
+    from {
+        transform: translate(50%, 0);
+    }
+    50% {
+        transform: translate(50%, 60%);
     }
 }
 
@@ -267,11 +267,33 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
+}
+
+.box.focus {
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.box.focus .icon, .box.focus img {
+    transition: .5s ease-in-out;
+    animation-delay: .3s;
+}
+
+.box.focus:hover {
+    scale: 1.01;
+    transform: translateY(-5%);
+}
+
+.box.focus:hover .icon, .box.focus:hover img {
+    transform: translateY(-10%);
+    scale: 1.1;
 }
 
 .box .icon {
-    margin-bottom: .5em;
-    margin-left: .5em;
+    margin: .5em auto;
+    font-size: 2em;
+    width: max-content;
 }
 
 .box div:not(.column, .columns) {
@@ -322,8 +344,16 @@ footer p {
     height: 3em;
     width: 3em;
 }
+@media (max-width: 1200px) {
+    .floating {
+        display: none;
+    }
+}
 
 @media (max-width: 1024px) {
+    .landing:after {
+        transform: translate(-1.5rem, 3rem);
+    }
     .no-mg-mobile {
         margin: 0 !important;
     }
