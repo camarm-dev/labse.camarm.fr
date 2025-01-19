@@ -26,14 +26,16 @@
     </div>
     <div class="level-right">
       <a href="/apps.html" class="mr-5">Our apps</a>
-      <button class="button is-rounded has-background-secondary mr-2" onclick="window.open('mailto:software@camarm.dev')">Contact us</button>
-      <button class="button is-rounded has-background-secondary" onclick="document.body.classList.toggle('dark'); this.querySelector('i').classList.toggle('fa-sun'); this.querySelector('i').classList.toggle('fa-moon')">
+      <button class="button is-hidden-mobile is-rounded has-background-secondary mr-2" onclick="window.open('mailto:software@camarm.dev')">Contact us</button>
+      <button class="button is-rounded is-square has-background-secondary" onclick="document.body.classList.toggle('dark'); this.querySelector('i').classList.toggle('fa-sun'); this.querySelector('i').classList.toggle('fa-moon')">
         <i class="fa fa-sun"></i>
       </button>
     </div>
   </nav>
   <section class="section">
     <div class="container center">
+      <h1 class="title">Our application network</h1>
+      <p class="has-text-grey text-section mb-6">We are distributing various projects like alternative mobile clients for webapps or a cross-platform dictionary...</p>
       <div class="columns is-multiline">
         <div class="column is-half">
           <div class="box">
@@ -105,17 +107,21 @@
       <div class="pb-2 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
         <div class="mr-auto mb-1">
           <a class="is-inline-block" href="#">
-            <img class="image" src="img/logo.png" alt="Logo Labse" style="height: 4em"></a>
+            <img class="image light" src="img/logo.png" alt="Logo Labse" style="height: 3em">
+            <img class="image dark" src="img/logodark.png" alt="Logo Labse" style="height: 3em">
+          </a>
         </div>
       </div>
       <div class="pt-5" style="border-top: 1px solid var(--border);"></div>
     </div>
-    <div class="container">
-      <div class="is-flex-tablet is-justify-content-between is-align-items-center">
-        <p>All rights reserved © Labse Studio</p>
+    <div class="container" id="help">
+      <div class="is-flex-tablet">
+        <p class="has-text-grey">All rights reserved © Labse Studio, <a class="has-text-grey has-text-underlined has-text-weight-normal" href="https://github.com/camarm-dev/labse.camarm.dev">Credits & License</a></p>
         <div class="py-2 is-hidden-tablet"></div>
         <div class="ml-auto">
-          <a class="mr-4 is-inline-block" href="https://play.google.com/dev" target="_blank"><i class="fab fa-google-play"></i> Play Store</a>
+          <a class="mr-4 is-inline-block" href="/apps.html"><i class="fas fa-dot-circle"></i> Our apps</a>
+          <a class="mr-4 is-inline-block" href="https://support.camarm.fr" target="_blank"><i class="fas fa-question-circle"></i> Help center</a>
+          <a class="mr-4 is-inline-block" href="https://uptime.camarm.fr" target="_blank"><i class="fas fa-wifi"></i> Network status</a>
           <a class="mr-4 is-inline-block" href="mailto:software@camarm.dev"><i class="fas fa-envelope"></i> Email</a>
         </div>
       </div>

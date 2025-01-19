@@ -26,216 +26,67 @@
     </div>
     <div class="level-right">
       <a href="/apps.html" class="mr-5">Our apps</a>
-      <button class="button is-rounded has-background-secondary mr-2" onclick="window.open('mailto:software@camarm.dev')">Contact us</button>
-      <button class="button is-rounded has-background-secondary" onclick="document.body.classList.toggle('dark'); this.querySelector('i').classList.toggle('fa-sun'); this.querySelector('i').classList.toggle('fa-moon')">
+      <button class="button is-hidden-mobile is-rounded has-background-secondary mr-2" onclick="window.open('mailto:software@camarm.dev')">Contact us</button>
+      <button class="button is-rounded is-square has-background-secondary" onclick="document.body.classList.toggle('dark'); this.querySelector('i').classList.toggle('fa-sun'); this.querySelector('i').classList.toggle('fa-moon')">
         <i class="fa fa-sun"></i>
       </button>
     </div>
   </nav>
-  <section class="section landing is-medium">
-    <div class="columns  is-centered is-align-items-center is-justify-content-center">
-      <div class="column has-text-centered is-full">
-        <div class="floating">
-          <img src="img/star.png" alt="">
-        </div>
-        <div class="floating">
-          <img src="img/star1.png" alt="">
-        </div>
-        <h1 class="title is-large">
-          <span>We're</span>
-          <span class="has-text-primary">
+  <section class="section pb-4 landing is-medium">
+    <div class="container">
+      <div class="columns is-multiline is-centered is-align-items-center is-justify-content-space-between">
+        <div class="column is-half">
+          <h1 class="title is-large has-text-aligned-left">
+            Empowering
+            <span class="has-text-primary">
             <img src="img/icon-only.png" alt="Labse studio icon">
-            powering software
+            open source<span class="has-text-white"></span>
           </span>
-          <span>
+            <span class="has-text-grey">
             <i class="fa fa-arrow-right"></i>
-            around
+            <span>for an</span>
+            Ethical
             <span class="has-text-secondary">Internet</span>
           </span>
-        </h1>
-        <p>We promote open source and open projects around Internet.</p>
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <h2 class="title has-text-white ml-6">Who we are</h2>
-    <div class="container center">
-<!--   TODO link to stores   -->
-<!--      <div class="mb-6 pb-6 columns is-multiline">-->
-<!--        <div class="column mb-6 is-6 is-6-desktop mx-auto has-text-centered">-->
-<!--          <div class="buttons is-centered">-->
-<!--            <a href="https://playstore/" target="_blank"><img src="img/playstore.png" alt="View us on Play Store"></a>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-      <div class="columns is-multiline">
-        <div class="column is-one-third">
-          <div class="box">
-            <div>
-              <h4 class="is-size-4 has-text-weight-bold mb-2">Our story</h4>
-              <p class="subtitle has-text-grey">Labse is an organization created by <a href="https://www.camarm.dev">Armand CAMPONOVO "camarm"</a> in 2022. Our goal is to promote Open Source and distribute software around internet.</p>
-            </div>
-          </div>
-        </div>
-        <div class="column is-two-thirds">
-          <div class="box">
-            <h4 class="is-size-4 has-text-weight-bold mb-2">Find us on</h4>
-            <div class="columns">
-              <div class="column is-one-third">
-                <div class="box focus" onclick="window.open('https://github.com/labsestudio')">
-                  <span class="icon has-text-light">
-                    <i class="fab fa-github"></i>
-                  </span>
-                  <p>Github</p>
-                </div>
-              </div>
-              <div class="column is-one-third">
-                <div class="box focus" onclick="alert('Coming soon')">
-                  <span class="icon has-text-light">
-                    <i class="fab fa-google-play"></i>
-                  </span>
-                  <p>Playstore</p>
-                </div>
-              </div>
-              <div class="column is-one-third">
-                <div class="box focus" onclick="window.open('https://discord.gg/dwpT4EfYzK')">
-                  <span class="icon has-text-light">
-                    <i class="fab fa-discord"></i>
-                  </span>
-                  <p>Discord</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-two-thirds">
-          <div class="box img">
-            <img src="img/values.png" alt="Illustration">
-          </div>
-        </div>
-        <div class="column is-one-third">
-          <div class="box">
-            <div>
-              <h4 class="is-size-4 has-text-weight-bold mb-2">Our values</h4>
-              <p class="subtitle has-text-grey">We only distribute open source software, that do not track or save sensitive data about you. Your privacy is our priority.</p>
-            </div>
-          </div>
+          </h1>
         </div>
         <div class="column is-half">
-          <div class="box">
-            <div>
-              <h4 class="is-size-4 has-text-weight-bold mb-2">Our motivations</h4>
-              <p class="subtitle has-text-grey">We want you to focus on what you love. Let us managing your software deployment while you're working on functionalities.</p>
-            </div>
-          </div>
+          <figure class="image">
+            <img src="img/intro.jpeg" alt="Image d'illustration">
+            <figcaption>Image by SIMON LEE on Unsplash</figcaption>
+          </figure>
         </div>
-        <div class="column is-half">
-          <div class="box img">
-            <img src="img/help.png" alt=Illustration"">
-          </div>
-        </div>
-        <div class="column is-full">
-          <div class="box">
-            <h4 class="is-size-4 has-text-weight-bold mb-2">Our experience</h4>
-            <p class="subtitle has-text-grey">We have managed and distributed many open source application since the past three years. With our fine-tuned infrastructure, we benefit of high performances severs just for you, and very cheap !</p>
-          </div>
-        </div>
-        <div class="column is-full">
-          <div class="box has-background-primary">
-            <h2 class="mb-3 is-size-1 is-size-3-mobile has-text-weight-bold"><i onclick="window.open('mailto:software@camarm.dev'); window.open('https://www.camarm.dev')" class="fas fa-external-link-square-alt icon-hover"></i> Contact us</h2>
-            <p style="font-size: 1.1em">
-              A question ? Any demand ? You want to be powered by Labse ? Don't hesitate to contact us at <a
-                href="mailto:software@camarm.dev">software@camarm.dev</a>
-            </p>
-          </div>
+        <div class="column is-full has-text-centered mt-4">
+          <p>We promote open source and open projects around Internet.</p>
         </div>
       </div>
     </div>
   </section>
-  <section class="section">
-    <h2 class="title has-text-white ml-6">Our work</h2>
-    <div class="container center">
-      <div class="columns is-multiline">
-        <div class="column is-one-third">
-          <div class="box">
-            <div>
-              <h4 class="is-size-4 has-text-weight-bold mb-2">Our projects</h4>
-              <p class="subtitle has-text-grey">We are distributing various projects, alternative mobile clients for webapps, cross-platform dictionary and a whole EMS (WIP) !</p>
-            </div>
-          </div>
-        </div>
-        <div class="column is-two-thirds">
-          <div class="box">
-            <h4 class="is-size-4 has-text-weight-bold mb-2">Applications</h4>
-            <div class="columns is-multiline">
-                <div class="column is-one-third">
-                  <div class="box focus has-text-centered" onclick="window.open('/apps.html')">
-                    <img src="img/remede_icon.png" class="logo">
-                    <p>Remède</p>
-                  </div>
-                </div>
-                <div class="column is-one-third">
-                  <div class="box focus has-text-centered" onclick="window.open('/apps.html')">
-                    <img src="img/ajc_icon.png" class="logo">
-                    <p>AJC</p>
-                  </div>
-                </div>
-                <div class="column is-one-third">
-                  <div class="box focus has-text-centered" onclick="window.open('/apps.html')">
-                    <img src="img/dule_icon.png" class="logo">
-                    <p>Dule</p>
-                  </div>
-                </div>
-                <div class="column is-one-third">
-                  <div class="box focus has-text-centered" onclick="window.open('/apps.html')">
-                    <img src="img/scolibre.png" alt="" class="logo">
-                    <p>Scolibre (WIP)</p>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-
-        <div class="column is-three-fifths">
-          <div class="box">
-            <h4 class="is-size-4 has-text-weight-bold mb-2">People</h4>
-            <div class="columns is-multiline">
-              <div class="column is-half">
-                <div class="box has-text-centered">
-                  <img class="pdp" src="https://avatars.githubusercontent.com/u/77529508?v=4" alt="Armand Profile Picture">
-                  <h2>Armand</h2>
-                  <p class="left">Creator of labse studio. Maintainer.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-two-fifth">
-          <div class="box">
-            <div>
-              <h4 class="is-size-4 has-text-weight-bold mb-2">Our team</h4>
-              <p class="subtitle has-text-grey">Currently, I am alone to maintain and add features to Labse projects. If you are enjoying my projects and want to become part of Labse, don't hesitate to contact me !</p>
-            </div>
-          </div>
-        </div>
-        <div class="column is-full">
-          <div class="box has-background-secondary">
-            <h2 class="mb-3 is-size-1 is-size-3-mobile has-text-weight-bold"><i onclick="window.open('https://playstr')" class="fas fa-external-link-square-alt icon-hover"></i> Discover our apps</h2>
-            <p style="font-size: 1.1em">
-              Download, review and contribute to our application network !
-            </p>
-          </div>
-        </div>
-        <div class="column is-full" id="help">
-          <div class="box is-flex-direction-row is-justify-content-center">
-            <a class="mr-4 is-inline-block" href="/apps.html"><i class="fas fa-dot-circle"></i> Our apps</a>
-            <a class="mr-4">•</a>
-            <a class="mr-4 is-inline-block" href="https://support.camarm.fr" target="_blank"><i class="fas fa-question-circle"></i> Help center</a>
-            <a class="mr-4">•</a>
-            <a class="is-inline-block" href="https://uptime.camarm.fr" target="_blank"><i class="fas fa-wifi"></i> Network status</a>
-          </div>
-        </div>
-      </div>
+  <section class="section mt-6">
+    <p class="has-text-grey container">
+      Created by <a class="has-text-grey has-text-underlined" href="https://www.camarm.dev">Armand CAMPONOVO</a> in 2022, Labse Studio is a non-profit organisation whose goal is to propel various open source projects.
+      We believe in an ethical Internet, and users privacy is our priority.<br>
+      We have managed and distributed many open source applications since the past three years.
+      From software architecture to development, deployment or hosting, be productive, and we take care of the rest.<br>
+    </p>
+    <div class="socials container">
+      <a class="icon-link" href="https://github.com/labsestudio">
+        <span class="icon has-text-grey">
+          <i class="fab fa-github"></i>
+        </span>
+      </a>
+      <a class="icon-link" href="https://discord.gg/dwpT4EfYzK">
+        <span class="icon has-text-grey">
+          <i class="fab fa-discord"></i>
+        </span>
+      </a>
+      <span class="has-text-grey mr-1 ml-1 has-text-weight-bold">|</span>
+      <a href="mailto:software@camarm.dev" class="has-text-grey">software@camarm.dev</a>
+<!--      <a href="">-->
+<!--        <span class="icon has-text-light">-->
+<!--          <i class="fab fa-google-play"></i>-->
+<!--        </span>-->
+<!--      </a>-->
     </div>
   </section>
 
@@ -244,17 +95,21 @@
       <div class="pb-2 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
         <div class="mr-auto mb-1">
           <a class="is-inline-block" href="#">
-            <img class="image" src="img/logo.png" alt="Logo Labse" style="height: 4em"></a>
+            <img class="image light" src="img/logo.png" alt="Logo Labse" style="height: 3em">
+            <img class="image dark" src="img/logodark.png" alt="Logo Labse" style="height: 3em">
+          </a>
         </div>
       </div>
       <div class="pt-5" style="border-top: 1px solid var(--border);"></div>
     </div>
-    <div class="container">
-      <div class="is-flex-tablet is-justify-content-between is-align-items-center">
-        <p>All rights reserved © Labse Studio</p>
+    <div class="container" id="help">
+      <div class="is-flex-tablet">
+        <p class="has-text-grey">All rights reserved © Labse Studio, <a class="has-text-grey has-text-underlined has-text-weight-normal" href="https://github.com/camarm-dev/labse.camarm.dev">Credits & License</a></p>
         <div class="py-2 is-hidden-tablet"></div>
         <div class="ml-auto">
-          <a class="mr-4 is-inline-block" href="https://play.google.com/dev" target="_blank"><i class="fab fa-google-play"></i> Play Store</a>
+          <a class="mr-4 is-inline-block" href="/apps.html"><i class="fas fa-dot-circle"></i> Our apps</a>
+          <a class="mr-4 is-inline-block" href="https://support.camarm.fr" target="_blank"><i class="fas fa-question-circle"></i> Help center</a>
+          <a class="mr-4 is-inline-block" href="https://uptime.camarm.fr" target="_blank"><i class="fas fa-wifi"></i> Network status</a>
           <a class="mr-4 is-inline-block" href="mailto:software@camarm.dev"><i class="fas fa-envelope"></i> Email</a>
         </div>
       </div>
